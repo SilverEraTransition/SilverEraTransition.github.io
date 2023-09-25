@@ -1,0 +1,188 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('images/background1.png');
+    background-size: 100% auto;  /* 横向100%，纵向自适应 */
+    background-repeat: no-repeat;
+    height: 700px;  /* 你需要根据你的图片高度进行调整 */
+    
+}
+
+.content {
+    height: 700px;  /* 你需要根据你的图片高度进行调整 */
+}
+
+/* 针对整个网站的滚动条样式 */
+::-webkit-scrollbar {
+    width: 10px; /* 设置滚动条的宽度 */
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+    background: transparent; /* 设置轨道背景为透明 */
+}
+
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.6); /* 设置滑块为半透明灰色 */
+    border-radius: 5px; /* 轻微圆角 */
+}
+
+/* 鼠标悬停在滑块上时的样式 */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(64, 64, 64, 0.8); /* 深灰色 */
+}
+
+/* 顶部导航样式 */
+nav {
+    margin-top: 20px;  /* 为顶部导航添加上边距 */
+    background-color: rgba(0, 0, 0, 0); /* 半透明的黑色背景 */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* 使按钮靠右放置 */
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    font-size: 28px; /* 或任何你想要的大小 */
+    color: #352a24;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* 鼠标悬停时的背景颜色 */
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* 将按钮组居中显示 */
+    align-items: center;
+    margin-top: 50px;  /* 从上向下移动50px, 你可以根据需要修改这个值 */
+    margin-left: 400px; 
+
+}
+
+/* 上方文本的样式 */
+.role-text {
+    text-align: left; /* 文本居中 */
+    font-size: 45px; /* 字体大小 */
+    color: #352a24; /* 字体颜色 */
+    margin-top: 270px;  /* 从上向下移动50px, 你可以根据需要修改这个值 */
+    margin-left: 700px; 
+}
+
+
+
+.btn {
+    font-size: 34px; /* 调整为更大的字体大小 */
+    display: inline-block;
+    background-color: transparent; /* 设置背景为透明 */
+    color: #352a24;
+    padding: 24px 42px;
+    border: 2px solid #352a24;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* 鼠标悬停时的半透明背景 */
+    color: #000;
+}
+
+.separator {
+    color: #352a24;
+    font-size: 100px;
+    margin: 0 50px;
+}
+
+
+body.about-page {
+    background-image: url('images/background2.png'); /* 用你想要的背景图片替换 */
+    /* 你可以根据需要添加其他背景相关的属性，例如： */
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    height: 2000px;  /* 你需要根据你的图片高度进行调整 */
+}
+
+.about-page .content {
+    margin-top: 215px;  /* 从上向下移动50px, 你可以根据需要修改这个值 */
+    margin-left: 300px;  /* 从左向右移动50px, 你可以根据需要修改这个值 */
+    /* ... 你可以根据需要添加其他属性 ... */
+}
+
+/* 修改about.html页面的<h1>样式 */
+.about-page h1 {
+    color: #352a24;  /* 你可以选择你喜欢的颜色 */
+    font-size: 40px;  /* 设置字体大小 */
+    /* ... 你可以根据需要添加其他属性 ... */
+}
+
+/* 修改about.html页面的<p>样式 */
+.about-page p {
+    color: #352a24;  /* 你可以选择你喜欢的颜色 */
+    font-size: 85px;  /* 设置字体大小 */
+    /* ... 你可以根据需要添加其他属性 ... */
+}
+
+.about-page p:first-of-type {
+    margin-top: 20px;  /* 为第一个段落添加一个底部边距 */
+}
+
+.about-page .content p.about-description {
+    margin-top: 360px;  /* 调整与上一个段落的间距 */
+    color: #352a24;  /* 字体颜色 */
+    font-size: 30px;  /* 字体大小 */
+    line-height: 1.6;  /* 行间距 */
+    max-width: 1600px;  /* 段落的最大宽度 */
+    margin-left: -130px;  /* 左边距，调整段落的水平位置 */
+    margin-right: 50px;  /* 右边距，与左边距结合使用可以调整段落的宽度 */
+}
+
+.about-page .content p.ai-description {
+    color: #352a24;  /* 字体颜色，你可以修改为你想要的颜色 */
+    font-size: 26px;  /* 字体大小，你可以调整为适当的大小 */
+    margin-top: 75px;  /* 与上一个段落的间距，你可以调整这个值 */
+    line-height: 1.6;  /* 行间距 */
+    max-width: 600px;  /* 段落的最大宽度，可以调整 */
+    margin-left: -130px;  /* 左边距，调整段落的水平位置 */
+    /* ... 你可以根据需要添加其他属性 ... */
+}
+
+.about-page .content p.dedication-description  {
+    color: #352a24;  /* 字体颜色，你可以修改为你想要的颜色 */
+    font-size: 26px;  /* 字体大小，你可以调整为适当的大小 */
+    margin-top: 40px;  /* 与上一个段落的间距，你可以调整这个值 */
+    line-height: 1.6;  /* 行间距 */
+    max-width: 600px;  /* 段落的最大宽度，可以调整 */
+    margin-left: -130px;  /* 左边距，调整段落的水平位置 */
+    /* ... 你可以根据需要添加其他属性 ... */
+}
+
+/* 公司logo样式 */
+.logo-link {
+    position: absolute;  /* logo 的绝对定位 */
+    top: 25px;  /* 距离 nav 顶部的距离 */
+    left: 25px;  /* 距离 nav 左侧的距离 */
+}
+.logo {
+    height: 100px;  /* 或其他你希望的大小 */
+    width: auto;  /* 保持图片的原始比例 */
+}
